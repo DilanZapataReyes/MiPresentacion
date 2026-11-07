@@ -1,0 +1,5 @@
+## Pregunta de reflexión: Función y relación entre MainWindow.axaml y MainWindow.axaml.cs
+
+`MainWindow.axaml` funciona como la capa visual (la interfaz gráfica) de la aplicación, encargándose de estructurar y ubicar los elementos en la pantalla mediante XAML (como las cajas de texto y los botones). Por su parte, `MainWindow.axaml.cs` contiene la lógica de programación en C# que le da vida a esa interfaz.
+
+Ambos archivos se conectan y relacionan gracias a que los controles en XAML se identifican mediante el atributo `x:Name`, lo que permite que el código en C# los reconozca directamente. Además, los eventos como `Click` en los botones vinculan la acción del usuario en la interfaz con un método específico en el archivo de C#, permitiendo procesar los datos ingresados y actualizar los mensajes en pantalla de forma interactiva.
